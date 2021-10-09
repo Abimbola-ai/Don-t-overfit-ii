@@ -30,7 +30,7 @@ Feature engineering was performed on the dataset my creating additional variable
 # Modeling & Results
 Models ran on the dataset includes  
 +-----------------------------------------------+--------------------------+-------------------+
-|                     Model                     |         Features         | LeaderBoard Score |
+|                Model - Raw Data               |         Features         | LeaderBoard Score |
 +-----------------------------------------------+--------------------------+-------------------+
 |              Logistic Regression              |    All Data - scaled     |       0.737       |
 |    Logistic Regression with hyperparameter    |    All Data - scaled     |       0.848       |
@@ -41,17 +41,18 @@ Models ran on the dataset includes
 | Support Vector Classifier with hyperparameter |    All Data - scaled     |       0.756       |
 +-----------------------------------------------+--------------------------+-------------------+
 
-+----------------------------------------------+-----------------------------+-------------------+
-|                    Model                     |           Features          | LeaderBoard Score |
-+----------------------------------------------+-----------------------------+-------------------+
-|             Logistic Regression              | Feature Engineered - scaled |       0.738       |
-|   Logistic Regression with hyperparameter    | Feature Engineered - scaled |       0.848       |
-|           Random Forest Classifier           | Feature Engineered - scaled |       0.662       |
-| Random Forest Classifier with hyperparameter | Feature Engineered - scaled |       0.734       |
-+----------------------------------------------+-----------------------------+-------------------+
++-----------------------------------------------+-----------------------------+-------------------+
+|        Model - Feature Engineered Data        |           Features          | LeaderBoard Score |
++-----------------------------------------------+-----------------------------+-------------------+
+|              Logistic Regression              | Feature Engineered - scaled |       0.738       |
+|    Logistic Regression with hyperparameter    | Feature Engineered - scaled |       0.848       |
+|            Random Forest Classifier           | Feature Engineered - scaled |       0.662       |
+|  Random Forest Classifier with hyperparameter | Feature Engineered - scaled |       0.734       |
+| Support Vector Classifier with hyperparameter | Feature Engineered - scaled |       0.743       |
++-----------------------------------------------+-----------------------------+-------------------+
 
 # Conclusion
-Logistic regression model is known to perform better when the number of noise variables is less than or equal to the number of explanatory vaibles and Random Foresthas a higher true and false positive rateas the number of explanatory variables increase in the dataset. 
+Logistic regression model is known to perform better when the number of noise variables is less than or equal to the number of explanatory variables and Random Forest has a higher true and false positive rate as the number of explanatory variables increase in the dataset. 
 
 Random Forest is also said to be more accuracy focused and it performs better with more categorical data than numeric while logistic regression on the hand is a little confusing when it comes to categorical data. If the dataset has more categorical data and consists of outliers, it is better to use a Random Forest classification model.
 
